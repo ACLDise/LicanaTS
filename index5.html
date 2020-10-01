@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scalable=1, maximum-scale=1,minimum-scale=1">
+	<title>All Products | LICANA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+
+<div class="container">
+	<div class="navbar">
+	<div class="logo">
+		<img src="images/logo.png" alt="125px">
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="index1.html">Productos</a></li>
+			<li><a href="index3.html">Nosotros</a></li>
+			<li><a href="index4.html">Contacto</a></li>
+			<li><a href="index5.html">Cuenta</a></li>
+		</ul>
+	</nav>
+	<img src="images/cart.png" width="30px" height="30px">
+</div>
+<center><div id="article">
+		
+		<form action="" id="form">
+
+	  		<h2><center>Registro de datos</center></h2>
+	  		<label>Nombres: </label>
+	  		<input type="text" name="itxt_nombre" id="itxt_nombre"><br><br>
+	  		<label>Apellidos: </label>
+	  		<input type="text" name="itxt_apellido" id="itxt_apellido"><br><br>
+	  		<label>¿Usted es mayor de edad? </label>
+	  		<input type="radio" name="pregunta_edad" id="edad_mayor" value="si">Si
+	  		<input type="radio" name="pregunta_edad" id="edad_menor" value="no">No <br><br>
+
+	  		  <script>
+	  		  	function prueba(){
+	  		  		var radio = document.getElementByName("pregunta_edad");
+	  		  		var valueInputName = document.getElementById("itxt_nombre").value;
+	  		  		alert(valueInputName);
+
+	  		  		for(var i=0; i<radio.length; i++){
+	  		  			alert("el valor del radio"+radio[i].value+"seleccionado es "+radio[i].checked);
+	  		  		}
+	  		  	}
+
+	  		  	function prueba(){
+	  		  		var radio = document.getElementByName("pregunta_edad");
+	  		  		if(radio[0].checked){
+	  		  			alert("Puede continuar con el registro");
+	  		  		}else{
+	  		  			alert("No puede continuar con el registro");
+	  		  		}
+	  		  	}
+
+	  		  </script>
+	  		<label>Documento: </label>
+	  		<input type="text" name="itxt_numeroD" id="itxt_numeroD"><br><br>
+	  		<label>Télefono: </label>
+	  		<input type="numero" name="itxt_telefono" id="itxt_telefono"><br><br>
+	  		<label>Ciudad: </label>
+	  		<input type="text" name="itxt_ciudad" id="itxt_ciudad"><br><br>
+	  		<label>Dirección: </label>
+	  		<input type="text" name="itxt_direccion" id="itxt_direccion"><br><br>
+	  		<label>Email: </label>
+	  		<input type="email" name="itxt_email" id="itxt_email"><br><br>
+	  		<label>Usuario: </label>
+	  		<input type="text" name="itxt_usuario" id="itxt_usuario"><br><br>
+	  		<label>Contraseña: </label>
+	  		<input type="password" name="itxt_contraseña" id="itxt_contraseña"><br><br>
+	  		<center><button type="button" onclick="datos()">Registrar</button></center>
+
+ 	</form></center>
+	  	
+
+</div>
+</div>
+
+
+<!---FOOTER---->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download our app</h3>
+				<p>Download for Android and ios</p>
+				<div class="app-logo">
+				<img src="images/play-store.png">
+					<img src="images/app-store.png">
+				
+				</div>
+			</div>
+			<div class="footer-col-2">
+				z<img src="images/logo-white.png">
+				<p>Our purpose</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Usful Links</h3>
+				<ul>
+					<li>Cupon</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright">Copyright 2020 - Camila Jimenez Y Lina Ovalle</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
